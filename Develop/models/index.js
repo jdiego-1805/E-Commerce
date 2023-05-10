@@ -28,7 +28,7 @@ Product.belongsToMany(Tag, {
 // Tags belongToMany Products (through ProductTag)
 
 Tag.belongsToMany(Product, {
-  through: Product,
+  through: ProductTag,
   onDelete: 'SET NULL'
 })
 
